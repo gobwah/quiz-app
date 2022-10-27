@@ -1,11 +1,18 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
+  width: 100%;
 
   .App-logo {
     height: 40vmin;
     pointer-events: none;
+    background-color: transparent;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -14,8 +21,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  .App-header {
-    background-color: #282c34;
+  .App-body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,10 +29,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-  }
-
-  .App-link {
-    color: #61dafb;
+    width: 100%;
   }
 
   @keyframes App-logo-spin {
